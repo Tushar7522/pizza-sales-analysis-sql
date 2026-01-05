@@ -93,16 +93,16 @@ Below are a few **sample SQL queries** from the project that demonstrate how bus
 
 ---
 
-### 💰 Total Revenue Generated
 ```sql
+-- 💰 Total Revenue Generated
 SELECT 
     ROUND(SUM(od.quantity * p.price), 2) AS total_revenue
 FROM order_details od
 JOIN pizzas p 
-ON od.pizza_id = p.pizza_id;
+    ON od.pizza_id = p.pizza_id;
 
-### 🍕 Top 5 Most Ordered Pizza Types
-```sql
+
+-- 🍕 Top 5 Most Ordered Pizza Types
 SELECT 
     pt.name,
     SUM(od.quantity) AS total_quantity
@@ -115,8 +115,8 @@ GROUP BY pt.name
 ORDER BY total_quantity DESC
 LIMIT 5;
 
-### 📈 Cumulative Revenue Over Time
-```sql
+
+-- 📈 Cumulative Revenue Over Time
 SELECT 
     o.order_date,
     ROUND(
@@ -129,6 +129,7 @@ JOIN order_details od
 JOIN pizzas p 
     ON od.pizza_id = p.pizza_id
 GROUP BY o.order_date;
+
 
 ---
 ## 📈 Key Insights
