@@ -1,4 +1,3 @@
-# pizza-sales-analysis-sql
 # 🍕 Pizza Sales Analysis | SQL Project
 
 ## 📌 Project Summary
