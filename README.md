@@ -86,8 +86,51 @@ All SQL queries used for analysis are available here:
 - 📊 Cumulative revenue analysis over time  
 - 🏆 Top 3 pizzas by revenue within each category  
 
+--- 
+## 🔍 Sample SQL Queries
+
+Below are a few **sample SQL queries** from the project that demonstrate how business insights were derived from the dataset.
+
 ---
 
+### 💰 Total Revenue Generated
+```sql
+SELECT 
+    ROUND(SUM(od.quantity * p.price), 2) AS total_revenue
+FROM order_details od
+JOIN pizzas p 
+ON od.pizza_id = p.pizza_id;
+
+### 🍕 Top 5 Most Ordered Pizza Types
+```sql
+SELECT 
+    pt.name,
+    SUM(od.quantity) AS total_quantity
+FROM order_details od
+JOIN pizzas p 
+    ON od.pizza_id = p.pizza_id
+JOIN pizza_types pt 
+    ON p.pizza_type_id = pt.pizza_type_id
+GROUP BY pt.name
+ORDER BY total_quantity DESC
+LIMIT 5;
+
+### 📈 Cumulative Revenue Over Time
+```sql
+SELECT 
+    o.order_date,
+    ROUND(
+        SUM(SUM(od.quantity * p.price)) OVER (ORDER BY o.order_date),
+        2
+    ) AS cumulative_revenue
+FROM orders o
+JOIN order_details od 
+    ON o.order_id = od.order_id
+JOIN pizzas p 
+    ON od.pizza_id = p.pizza_id
+GROUP BY o.order_date;
+
+---
 ## 📈 Key Insights
 - 🔑 A small number of pizza types generate a significant portion of total revenue  
 - 📏 Medium and Large pizza sizes are the most preferred by customers  
