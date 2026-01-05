@@ -132,16 +132,15 @@ GROUP BY o.order_date;
 ---
 
 ---
+```
 ## 📈 Key Insights
 - 🔑 A small number of pizza types generate a significant portion of total revenue  
 - 📏 Medium and Large pizza sizes are the most preferred by customers  
 - ⏱️ Orders peak during lunch and dinner hours  
 - 📈 Revenue shows a steady upward trend over time  
-- 🏷️ Category-level analysis highlights top-performing pizzas  
-
+- 🏷️ Category-level analysis highlights top-performing pizzas
 
 ---
-
 ## 🏁 Conclusion
 This project highlights how **SQL can be used to analyze transactional sales data and derive meaningful business insights**.  
 It reflects **real-world data analysis practices** and showcases the analytical skills required for a **Data Analyst role**.
@@ -153,8 +152,8 @@ It reflects **real-world data analysis practices** and showcases the analytical 
 - 📆 Perform monthly and yearly trend analysis  
 - 👥 Apply customer segmentation techniques  
 - 💹 Include profitability and cost analysis  
+  
 
----
 
 
 
