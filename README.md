@@ -129,7 +129,7 @@ JOIN order_details od
 JOIN pizzas p 
     ON od.pizza_id = p.pizza_id
 GROUP BY o.order_date;
-
+---
 
 ---
 ## 📈 Key Insights
