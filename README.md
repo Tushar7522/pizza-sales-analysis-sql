@@ -129,10 +129,9 @@ JOIN order_details od
 JOIN pizzas p 
     ON od.pizza_id = p.pizza_id
 GROUP BY o.order_date;
----
 
----
 ```
+---
 ## 📈 Key Insights
 - 🔑 A small number of pizza types generate a significant portion of total revenue  
 - 📏 Medium and Large pizza sizes are the most preferred by customers  
