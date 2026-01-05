@@ -45,10 +45,8 @@ These tables are connected using **primary and foreign keys**, enabling advanced
 
 ## 🧠 SQL Queries
 All SQL queries used for analysis are available here:  
-➡️ 📂 `sql/pizza_sales_queries.sql`
+➡️ 📂 [Click here to download](./pizza_sales_sql_report.pdf)
 
-## Project file 
-➡️ 📂 
 
 ---
 
