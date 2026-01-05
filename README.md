@@ -47,6 +47,9 @@ These tables are connected using **primary and foreign keys**, enabling advanced
 All SQL queries used for analysis are available here:  
 ➡️ 📂 `sql/pizza_sales_queries.sql`
 
+## Project file 
+➡️ 📂 
+
 ---
 
 ## 📊 Key Performance Indicators (KPIs)
@@ -92,8 +95,23 @@ All SQL queries used for analysis are available here:
 - 📈 Revenue shows a steady upward trend over time  
 - 🏷️ Category-level analysis highlights top-performing pizzas  
 
+
 ---
 
-## 📂 Project Structure
+## 🏁 Conclusion
+This project highlights how **SQL can be used to analyze transactional sales data and derive meaningful business insights**.  
+It reflects **real-world data analysis practices** and showcases the analytical skills required for a **Data Analyst role**.
+
+---
+
+## 🚀 Future Scope
+- 📊 Develop a Power BI / Tableau dashboard  
+- 📆 Perform monthly and yearly trend analysis  
+- 👥 Apply customer segmentation techniques  
+- 💹 Include profitability and cost analysis  
+
+---
+
+
 
 
